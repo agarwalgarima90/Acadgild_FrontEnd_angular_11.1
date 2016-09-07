@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="acadgild">
+	<head>
+		<title>Assignment 11.1</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+		<script>
+			var myapp = angular.module('acadgild', []);
+
+			myapp.controller('mycontroller1', function($scope) {
+				$scope.name = "Garima Agarwal";
+				$scope.employeeId = 5007403;
+				$scope.designation = "FrontEnd Web Developer";
+			});
+
+		</script>
+	</head>
+	<body>
+		<div ng-controller="mycontroller1">
+			<p> Name: {{name}}</p>
+			<p> EmployeeID: {{employeeId}}</p>
+			<p> Designation: {{designation}}</p>
+		</div>
+	</body>
+</html>
